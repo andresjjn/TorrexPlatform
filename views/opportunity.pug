@@ -1,0 +1,14 @@
+extends ./layout/index
+
+block content
+    main.container.mt-5
+            .row
+                .col.md-1.justify-content-center
+                    h1=info.objetive
+                    img(src=info.organizations[0].picture, alt="Company photo", class="imgBio")
+                .col.mt-5.py-4.justify-content-right
+                    h2=info.agreement.type
+                    p ID: #{info.id}
+                    p Opportunity: #{info.opportunity}
+                    p Status: #{info.status}
+                    p Review: #{info.review}

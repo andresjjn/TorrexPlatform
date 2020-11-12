@@ -1,0 +1,15 @@
+extends ./layout/index
+
+block content
+    main.container.mt-5
+        h1=page
+        .row.justify-content-center.col.md-5
+            img(src="https://c.files.bbci.co.uk/289F/production/_113699301_gettyimages-1175060780crop.jpg", alt="", class="userImg")
+        .row
+            .row.justify-content-center.col
+                .col-md-8
+                    form(action="/job" method="POST")
+                        .form-group
+                            input#username(type="text", placeholder="The opportunity ID", name="id", class="form-control")
+                        input.btn.btn-success.btn-block(type="submit")
+                    p=status

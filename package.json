@@ -1,0 +1,36 @@
+{
+  "name": "torrexplatform",
+  "version": "1.0.0",
+  "description": "This is a project for torre.co interview",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresjjn/TorrexPlatform.git"
+  },
+  "keywords": [
+    "torre",
+    "platform",
+    "torre.co",
+    "andresjjn"
+  ],
+  "author": "Andres Felipe Jejen Tabares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresjjn/TorrexPlatform/issues"
+  },
+  "homepage": "https://github.com/andresjjn/TorrexPlatform#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "pug": "^3.0.0"
+  }
+}

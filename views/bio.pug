@@ -1,0 +1,14 @@
+extends ./layout/index
+
+block content
+    main.container.mt-5
+        .row
+            .col.md-1.justify-content-center
+                h1=info.person.professionalHeadline
+                img(src=info.person.picture, alt="User photo", class="imgBio")
+            .col.mt-5.py-4.justify-content-right
+                h2=info.person.name
+                p ID: #{info.person.publicId}
+                p Weight: #{info.person.weight}
+                p Location: #{info.person.location.name}
+                p Summary: #{info.person.summaryOfBio}
